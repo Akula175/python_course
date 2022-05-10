@@ -118,13 +118,85 @@ else:
 
 # For calc
 
-text = "2021-03-23T01:39:12"
+text_raw = "60*2"
 
-pos_of_T = text.find("T")
-print(pos_of_T)
+if not text_raw.find("+") == -1:
+    print("Found +")
 
-date_str = text[0:pos_of_T]
-print(date_str)
+    pos_of_L = text_raw.find("+")
+    print(pos_of_L)
 
-time_str = text[pos_of_T+1:]
-print(time_str)
+    first_num = text_raw[0:pos_of_L]
+    print(first_num)
+    first_num_int = int(first_num)
+
+    second_num = text_raw[pos_of_L+1:]
+    print(second_num)
+    sec_num_int = int(second_num)
+
+    print(first_num_int+sec_num_int)
+
+elif not text_raw.find("/") == -1:
+    print("Found /")
+
+    pos_of_L = text_raw.find("/")
+    print(pos_of_L)
+
+    first_num = text_raw[0:pos_of_L]
+    print(first_num)
+    first_num_int = int(first_num)
+
+    second_num = text_raw[pos_of_L+1:]
+    print(second_num)
+    sec_num_int = int(second_num)
+
+    print(first_num_int/sec_num_int)
+
+elif not text_raw.find("-") == -1:
+    print("Found -")
+
+    pos_of_L = text_raw.find("-")
+    print(pos_of_L)
+
+    first_num = text_raw[0:pos_of_L]
+    print(first_num)
+    first_num_int = int(first_num)
+
+    second_num = text_raw[pos_of_L+1:]
+    print(second_num)
+    sec_num_int = int(second_num)
+
+    print(first_num_int-sec_num_int)
+
+elif not text_raw.find("*") == -1:
+    print("Found *")
+
+    pos_of_L = text_raw.find("*")
+    print(pos_of_L)
+
+    first_num = text_raw[0:pos_of_L]
+    print(first_num)
+    first_num_int = int(first_num)
+
+    second_num = text_raw[pos_of_L+1:]
+    print(second_num)
+    sec_num_int = int(second_num)
+
+    print(first_num_int*sec_num_int)
+else:
+    print("Found none")
+
+# test_text_raw = "22"
+# test_text = int(test_text_raw)
+# print(test_text)
+# print(test_text+1)
+
+
+# pos_of_L = text.find("H")
+# print(pos_of_L)
+#
+# date_str = text[0:pos_of_L]
+# print(date_str)
+#
+# time_str = text[pos_of_L+1:]
+# print(time_str)
