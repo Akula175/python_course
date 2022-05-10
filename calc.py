@@ -8,70 +8,62 @@ while True:
     if not text_raw.find("+") == -1:
         #print("Found +")
 
-        pos_of_L = text_raw.find("+")
+        pos_of_S = text_raw.find("+")
         #print(pos_of_L)
 
-        first_num = text_raw[0:pos_of_L]
+        first_num = int(text_raw[0:pos_of_S])
         #print(first_num)
-        first_num_int = int(first_num)
 
-        second_num = text_raw[pos_of_L+1:]
+        second_num = int(text_raw[pos_of_S+1:])
         #print(second_num)
-        sec_num_int = int(second_num)
 
-        print("Result: ", first_num_int+sec_num_int)
-        last_ans = (first_num_int+sec_num_int)
+        print("Result: ", first_num+second_num)
+        last_ans = (first_num+second_num)
 
     elif not text_raw.find("/") == -1:
         #print("Found /")
 
-        pos_of_L = text_raw.find("/")
+        pos_of_S = text_raw.find("/")
         #print(pos_of_L)
 
-        first_num = text_raw[0:pos_of_L]
+        first_num = int(text_raw[0:pos_of_S])
         #print(first_num)
-        first_num_int = int(first_num)
 
-        second_num = text_raw[pos_of_L+1:]
+        second_num = int(text_raw[pos_of_S+1:])
         #print(second_num)
-        sec_num_int = int(second_num)
 
-        print("Result: ", first_num_int/sec_num_int)
-        last_ans = (first_num_int/sec_num_int)
+        print("Result: ", first_num/second_num)
+        last_ans = (first_num/second_num)
 
     elif not text_raw.find("-") == -1:
         #print("Found -")
 
-        pos_of_L = text_raw.find("-")
+        pos_of_S = text_raw.find("-")
         #print(pos_of_L)
 
-        first_num = text_raw[0:pos_of_L]
+        first_num = int(text_raw[0:pos_of_S])
         #print(first_num)
-        first_num_int = int(first_num)
 
-        second_num = text_raw[pos_of_L+1:]
+        second_num = int(text_raw[pos_of_S+1:])
         #print(second_num)
-        sec_num_int = int(second_num)
 
-        print("Result: ", first_num_int-sec_num_int)
-        last_ans = (first_num_int-sec_num_int)
+        print("Result: ", first_num-second_num)
+        last_ans = (first_num-second_num)
 
     elif not text_raw.find("*") == -1:
         #print("Found *")
 
-        pos_of_L = text_raw.find("*")
+        pos_of_S = text_raw.find("*")
         #print(pos_of_L)
 
-        first_num = text_raw[0:pos_of_L]
+        first_num = int(text_raw[0:pos_of_S])
         #print(first_num)
-        first_num_int = int(first_num)
 
-        second_num = text_raw[pos_of_L+1:]
+        second_num = int(text_raw[pos_of_S+1:])
         #print(second_num)
-        sec_num_int = int(second_num)
 
-        print("Result: ", first_num_int*sec_num_int)
-        last_ans = (first_num_int*sec_num_int)
+        print("Result: ", first_num*second_num)
+        last_ans = (first_num*second_num)
 
     elif text_raw == "q":
         print("Bye!")
