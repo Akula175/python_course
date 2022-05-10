@@ -118,73 +118,73 @@ else:
 
 # For calc
 
-text_raw = "60*2"
-
-if not text_raw.find("+") == -1:
-    print("Found +")
-
-    pos_of_L = text_raw.find("+")
-    print(pos_of_L)
-
-    first_num = text_raw[0:pos_of_L]
-    print(first_num)
-    first_num_int = int(first_num)
-
-    second_num = text_raw[pos_of_L+1:]
-    print(second_num)
-    sec_num_int = int(second_num)
-
-    print(first_num_int+sec_num_int)
-
-elif not text_raw.find("/") == -1:
-    print("Found /")
-
-    pos_of_L = text_raw.find("/")
-    print(pos_of_L)
-
-    first_num = text_raw[0:pos_of_L]
-    print(first_num)
-    first_num_int = int(first_num)
-
-    second_num = text_raw[pos_of_L+1:]
-    print(second_num)
-    sec_num_int = int(second_num)
-
-    print(first_num_int/sec_num_int)
-
-elif not text_raw.find("-") == -1:
-    print("Found -")
-
-    pos_of_L = text_raw.find("-")
-    print(pos_of_L)
-
-    first_num = text_raw[0:pos_of_L]
-    print(first_num)
-    first_num_int = int(first_num)
-
-    second_num = text_raw[pos_of_L+1:]
-    print(second_num)
-    sec_num_int = int(second_num)
-
-    print(first_num_int-sec_num_int)
-
-elif not text_raw.find("*") == -1:
-    print("Found *")
-
-    pos_of_L = text_raw.find("*")
-    print(pos_of_L)
-
-    first_num = text_raw[0:pos_of_L]
-    print(first_num)
-    first_num_int = int(first_num)
-
-    second_num = text_raw[pos_of_L+1:]
-    print(second_num)
-    sec_num_int = int(second_num)
-
-    print(first_num_int*sec_num_int)
-else:
-    print("Found none")
+# text_raw = "60*2"
+#
+# if not text_raw.find("+") == -1:
+#     print("Found +")
+#
+#     pos_of_L = text_raw.find("+")
+#     print(pos_of_L)
+#
+#     first_num = text_raw[0:pos_of_L]
+#     print(first_num)
+#     first_num_int = int(first_num)
+#
+#     second_num = text_raw[pos_of_L+1:]
+#     print(second_num)
+#     sec_num_int = int(second_num)
+#
+#     print(first_num_int+sec_num_int)
+#
+# elif not text_raw.find("/") == -1:
+#     print("Found /")
+#
+#     pos_of_L = text_raw.find("/")
+#     print(pos_of_L)
+#
+#     first_num = text_raw[0:pos_of_L]
+#     print(first_num)
+#     first_num_int = int(first_num)
+#
+#     second_num = text_raw[pos_of_L+1:]
+#     print(second_num)
+#     sec_num_int = int(second_num)
+#
+#     print(first_num_int/sec_num_int)
+#
+# elif not text_raw.find("-") == -1:
+#     print("Found -")
+#
+#     pos_of_L = text_raw.find("-")
+#     print(pos_of_L)
+#
+#     first_num = text_raw[0:pos_of_L]
+#     print(first_num)
+#     first_num_int = int(first_num)
+#
+#     second_num = text_raw[pos_of_L+1:]
+#     print(second_num)
+#     sec_num_int = int(second_num)
+#
+#     print(first_num_int-sec_num_int)
+#
+# elif not text_raw.find("*") == -1:
+#     print("Found *")
+#
+#     pos_of_L = text_raw.find("*")
+#     print(pos_of_L)
+#
+#     first_num = text_raw[0:pos_of_L]
+#     print(first_num)
+#     first_num_int = int(first_num)
+#
+#     second_num = text_raw[pos_of_L+1:]
+#     print(second_num)
+#     sec_num_int = int(second_num)
+#
+#     print(first_num_int*sec_num_int)
+# else:
+#     print("Found none")
 
 # test_text_raw = "22"
 # test_text = int(test_text_raw)
@@ -200,3 +200,51 @@ else:
 #
 # time_str = text[pos_of_L+1:]
 # print(time_str)
+
+
+
+
+# def testfunc(name):
+#     print("Hello " + name)
+#
+# testfunc(name)
+
+# def calcfunction(symb):
+#     first_num = input_raw[0:pos_of_L]
+#     print(first_num)
+#     first_num_int = int(first_num)
+#
+#     second_num = input_raw[pos_of_L+1:]
+#     print(second_num)
+#     sec_num_int = int(second_num)
+#
+#     print("Result: ", first_num_int, symb, sec_num_int)
+#
+#
+# input_raw = input("Enter math: ")
+# if not input_raw.find("+") == -1:
+#     print("Found +")
+#
+#     pos_of_L = input_raw.find("+")
+#     print(pos_of_L)
+#     symb = (input_raw[pos_of_L])
+#     calcfunction(symb)
+# elif not input_raw.find("/") == -1:
+#     print("Found /")
+#
+#     pos_of_L = input_raw.find("/")
+#     print(pos_of_L)
+#     symb = (input_raw[pos_of_L])
+#     calcfunction(symb)
+# else:
+#     print("Idfk")
+
+
+
+
+def add(x, y):
+    return x + y
+
+res = add(2, 3)
+
+print(res)
