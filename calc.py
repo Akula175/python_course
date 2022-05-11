@@ -1,75 +1,96 @@
+def add_func():
+    global last_ans
+    pos_of_S = usr_in.find("+")
+    first_num = int(usr_in[0:pos_of_S])
+    second_num = int(usr_in[pos_of_S+1:])
+
+    print("Result: ", first_num+second_num)
+    last_ans = (first_num+second_num)
+
+def sub_func():
+    global last_ans
+    pos_of_S = usr_in.find("-")
+    first_num = int(usr_in[0:pos_of_S])
+    second_num = int(usr_in[pos_of_S+1:])
+
+    print("Result: ", first_num-second_num)
+    last_ans = (first_num-second_num)
+
+def divide_func():
+    global last_ans
+    pos_of_S = usr_in.find("/")
+    first_num = int(usr_in[0:pos_of_S])
+    second_num = int(usr_in[pos_of_S+1:])
+
+    print("Result: ", first_num/second_num)
+    last_ans = (first_num/second_num)
+
+def multi_func():
+    global last_ans
+    pos_of_S = usr_in.find("*")
+    first_num = int(usr_in[0:pos_of_S])
+    second_num = int(usr_in[pos_of_S+1:])
+
+    print("Result: ", first_num*second_num)
+    last_ans = (first_num*second_num)
+
+
+
+
 print("This calculator accepts input in the following format\nnum+*-/num")
 print("You can also type ans to see the last result")
 print("Type q to quit")
 while True:
-    text_raw = input("Please enter calculation: ")
+    usr_in = input("Please enter calculation: ")
 
 
-    if not text_raw.find("+") == -1:
-        #print("Found +")
+    if usr_in.find("+") == True:
+        add_func()
 
-        pos_of_S = text_raw.find("+")
-        #print(pos_of_L)
+    elif usr_in.find("/") == True:
+        divide_func()
 
-        first_num = int(text_raw[0:pos_of_S])
-        #print(first_num)
+    elif usr_in.find("-") == True:
+        sub_func()
 
-        second_num = int(text_raw[pos_of_S+1:])
-        #print(second_num)
+    elif usr_in.find("*") == True:
+        multi_func()
 
-        print("Result: ", first_num+second_num)
-        last_ans = (first_num+second_num)
-
-    elif not text_raw.find("/") == -1:
-        #print("Found /")
-
-        pos_of_S = text_raw.find("/")
-        #print(pos_of_L)
-
-        first_num = int(text_raw[0:pos_of_S])
-        #print(first_num)
-
-        second_num = int(text_raw[pos_of_S+1:])
-        #print(second_num)
-
-        print("Result: ", first_num/second_num)
-        last_ans = (first_num/second_num)
-
-    elif not text_raw.find("-") == -1:
-        #print("Found -")
-
-        pos_of_S = text_raw.find("-")
-        #print(pos_of_L)
-
-        first_num = int(text_raw[0:pos_of_S])
-        #print(first_num)
-
-        second_num = int(text_raw[pos_of_S+1:])
-        #print(second_num)
-
-        print("Result: ", first_num-second_num)
-        last_ans = (first_num-second_num)
-
-    elif not text_raw.find("*") == -1:
-        #print("Found *")
-
-        pos_of_S = text_raw.find("*")
-        #print(pos_of_L)
-
-        first_num = int(text_raw[0:pos_of_S])
-        #print(first_num)
-
-        second_num = int(text_raw[pos_of_S+1:])
-        #print(second_num)
-
-        print("Result: ", first_num*second_num)
-        last_ans = (first_num*second_num)
-
-    elif text_raw == "q":
+    elif usr_in == "q":
         print("Bye!")
         break
 
-    elif text_raw == "ans":
+    elif usr_in == "ans":
         print("Result of last: ", last_ans)
+
+    elif "result" in usr_in:
+        if "+" in usr_in:
+            pos_of_S = usr_in.find("+")
+            second_num = int(usr_in[pos_of_S+1:])
+            print("Result: ", last_ans + second_num)
+            last_ans = (last_ans + second_num)
+
+        elif "-" in usr_in:
+            pos_of_S = usr_in.find("-")
+            second_num = int(usr_in[pos_of_S+1:])
+            print("Result: ", last_ans - second_num)
+            last_ans = (last_ans - second_num)
+
+        elif "/" in usr_in:
+            pos_of_S = usr_in.find("/")
+            second_num = int(usr_in[pos_of_S+1:])
+            print("Result: ", last_ans / second_num)
+            last_ans = (last_ans / second_num)
+
+        elif "*" in usr_in:
+            pos_of_S = usr_in.find("*")
+            second_num = int(usr_in[pos_of_S+1:])
+            print("Result: ", last_ans * second_num)
+            last_ans = (last_ans * second_num)
+
+        else:
+            print("Invalid")
+
+
     else:
-        print("Invalid Input: " + text_raw)
+        print("Invalid Input: " + usr_in)

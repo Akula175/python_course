@@ -254,3 +254,16 @@ else:
 
 
 # TEST
+
+
+
+
+usr_in = input("Type: ")
+
+if "user" in usr_in:
+    if "hey" in usr_in:
+        print("I see")
+    else:
+        print("I dont see")
+else:
+    print("Invalid")
