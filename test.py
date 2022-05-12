@@ -256,14 +256,10 @@ else:
 # TEST
 
 
+def factorial(n):
+  result = 1
+  for i in range(1, n+1):
+    result = result * i
+  print(result)
 
-
-usr_in = input("Type: ")
-
-if "user" in usr_in:
-    if "hey" in usr_in:
-        print("I see")
-    else:
-        print("I dont see")
-else:
-    print("Invalid")
+factorial(5)
