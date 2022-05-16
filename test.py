@@ -1,4 +1,4 @@
-#!/usr/bin/env/python3
+import sys
 
 first_name = "Bob"
 
@@ -263,3 +263,55 @@ def factorial(n):
   print(result)
 
 factorial(5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# New week
+
+
+cities = ["Stockholm", "Sundsvall", "Göteborg", "Malmö"]
+
+for city in cities:
+    print(city)
+
+# cities.append("Luleå")
+# cities.insert(index, "Jönköping")
+# cities.remove("Luleå")
+# cities.reverse()  # Byter ordningen bak o fram
+# cities.sort()  # Sorterar efter?
+
+# data = input("Enter parts: ")
+# parts = data.split(" ")
+# if len(parts) == 3:
+#     print("Hey")
+
+
+
+def text_file():
+
+    file_path = sys.argv[1]
+
+    with open(file_path) as f:
+        for line in f:
+            print(line)
+
+
+
+if __name__ == "__main__":
+
+    text_file()
