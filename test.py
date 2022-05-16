@@ -302,16 +302,29 @@ for city in cities:
 
 
 
-def text_file():
+# def text_file():
+#
+#     file_path = sys.argv[1]
+#
+#     with open(file_path) as f:
+#         for line in f:
+#             print(line)
+#
+#
+#
+# if __name__ == "__main__":
+#
+#     text_file()
 
-    file_path = sys.argv[1]
-
-    with open(file_path) as f:
-        for line in f:
-            print(line)
 
 
 
-if __name__ == "__main__":
 
-    text_file()
+
+
+
+
+
+str = "hey bro, u wanna go fishin?"
+print(str[:7])
+print(str[9:])
