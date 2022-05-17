@@ -4,8 +4,8 @@ def add_func():
     first_num = int(usr_in[0:pos_of_O])
     second_num = int(usr_in[pos_of_O+1:])
 
-    print("Result: ", first_num+second_num)
-    last_ans = (first_num+second_num)
+    print("Result: ", first_num + second_num)
+    last_ans = (first_num + second_num)
 
 def sub_func():
     global last_ans
