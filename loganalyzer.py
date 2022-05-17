@@ -24,7 +24,6 @@ def stats():
     print("errors", error_count)
     print("notice", notice_count)
 
-
 def line_print(t, n):
     with open(file_path) as f:
         for line in f:
@@ -33,7 +32,6 @@ def line_print(t, n):
                 type = (line[27:34])
                 msg = (line[n:])
                 print(date, msg)
-
 
 if __name__ == "__main__":
     arg_checker()
