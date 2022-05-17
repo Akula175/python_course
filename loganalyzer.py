@@ -1,7 +1,5 @@
 # Tobias_Gustafsson_tobias.gustafsson@edu.edugrade.se
-
 import sys
-
 file_path = sys.argv[1]
 
 def arg_checker():
