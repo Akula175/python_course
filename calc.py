@@ -3,7 +3,6 @@ def add_func():
     pos_of_O = usr_in.find("+")
     first_num = int(usr_in[0:pos_of_O])
     second_num = int(usr_in[pos_of_O+1:])
-
     print("Result: ", first_num + second_num)
     last_ans = (first_num + second_num)
 
@@ -12,7 +11,6 @@ def sub_func():
     pos_of_O = usr_in.find("-")
     first_num = int(usr_in[0:pos_of_O])
     second_num = int(usr_in[pos_of_O+1:])
-
     print("Result: ", first_num-second_num)
     last_ans = (first_num-second_num)
 
@@ -21,7 +19,6 @@ def divide_func():
     pos_of_O = usr_in.find("/")
     first_num = int(usr_in[0:pos_of_O])
     second_num = int(usr_in[pos_of_O+1:])
-
     print("Result: ", first_num/second_num)
     last_ans = (first_num/second_num)
 
@@ -30,7 +27,6 @@ def multi_func():
     pos_of_O = usr_in.find("*")
     first_num = int(usr_in[0:pos_of_O])
     second_num = int(usr_in[pos_of_O+1:])
-
     print("Result: ", first_num*second_num)
     last_ans = (first_num*second_num)
 
@@ -39,7 +35,6 @@ def factor_func():
     pos_of_O = usr_in.find("!")
     first_num = int(usr_in[0:pos_of_O])
     res = 1
-
     for i in range(1, first_num+1):
         res = res * i
     print("Result: ", res)
