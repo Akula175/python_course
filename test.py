@@ -333,5 +333,3 @@ print(str[9:])
 
 def testfunc():
     print(f"hey")
-
-testfunc()
