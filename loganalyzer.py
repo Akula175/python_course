@@ -37,7 +37,7 @@ def line_print(t, n):
                     date = (line[:26])
                     type = (line[27:35])
                     msg = (line[n:])
-                    print(date, msg)
+                    print(date + " " + msg)
     except FileNotFoundError:
         print("ERROR: File " + file_path + " not found")
         return False
