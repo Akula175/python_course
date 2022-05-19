@@ -10,7 +10,7 @@ def arg_checker():
     elif sys.argv[2] == "notice":
         line_print("notice", 36)
     else:
-        print("Invalid arguments")
+        print("ERROR: Invalid arguments")
 
 def stats():
     notice_count = 0
