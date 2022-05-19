@@ -29,7 +29,7 @@ def line_print(t, n):
         for line in f:
             if t in line:
                 date = (line[:26])
-                type = (line[27:34])
+                type = (line[27:35])
                 msg = (line[n:])
                 print(date, msg)
 
