@@ -2,7 +2,7 @@
 import sys
 file_path = sys.argv[1]
 
-def arg_checker():
+def arg_check():
     if sys.argv[2] == "statistics":
         stats()
     elif sys.argv[2] == "error":
@@ -34,4 +34,4 @@ def line_print(t, n):
                 print(date, msg)
 
 if __name__ == "__main__":
-    arg_checker()
+    arg_check()
