@@ -328,3 +328,10 @@ for city in cities:
 str = "hey bro, u wanna go fishin?"
 print(str[:7])
 print(str[9:])
+
+
+
+def testfunc():
+    print(f"hey")
+
+testfunc()
