@@ -56,35 +56,35 @@ def ans_cars2():
 if __name__ == "__main__":
     while True:
         usr_in = input("Enter calculation: ")
-        if usr_in.find("+"):
+        if not usr_in.find("ans+") == -1:
+            define_weird_pos("+")
+            ans_addition()
+        elif not usr_in.find("ans-") == -1:
+            define_weird_pos("-")
+            ans_subtraction()
+        elif not usr_in.find("ans/") == -1:
+            define_weird_pos("/")
+            ans_divide()
+        elif not usr_in.find("ans*") == -1:
+            define_weird_pos("*")
+            ans_cars2()
+        elif not usr_in.find("+") == -1:
             define_pos("+")
             addition()
-        elif usr_in.find("-"):
+        elif not usr_in.find("-") == -1:
             define_pos("-")
             subtraction()
-        elif usr_in.find("*") == True:
+        elif not usr_in.find("*") == -1:
             define_pos("*")
             cars2()
-        elif usr_in.find("/") == True:
+        elif not usr_in.find("/") == -1:
             define_pos("/")
             divide()
         elif usr_in == "ans":
             print(f"Last answer: {last_ans}")
-        elif "ans" in usr_in:
-            if "+" in usr_in:
-                define_weird_pos("+")
-                ans_addition()
-            elif "-" in usr_in:
-                define_weird_pos("-")
-                ans_subtraction()
-            elif "*" in usr_in:
-                define_weird_pos("*")
-                ans_cars2()
-            elif "/" in usr_in:
-                define_weird_pos("/")
-                ans_divide()
-            else:
-                print(f"Invalid input: {usr_in}")
+        elif not usr_in.find("ans+") == -1:
+            define_weird_pos("+")
+            ans_addition()
         elif usr_in == "q":
             print("Bye!")
             break
