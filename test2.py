@@ -56,10 +56,10 @@ def ans_cars2():
 if __name__ == "__main__":
     while True:
         usr_in = input("Enter calculation: ")
-        if usr_in.find("+") == True:
+        if usr_in.find("+"):
             define_pos("+")
             addition()
-        elif usr_in.find("-") == True:
+        elif usr_in.find("-"):
             define_pos("-")
             subtraction()
         elif usr_in.find("*") == True:
