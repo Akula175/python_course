@@ -84,7 +84,7 @@ if __name__ == "__main__":
                 define_weird_pos("/")
                 ans_divide()
             else:
-                print(f"Invalid Input: {usr_in}")
+                print(f"Invalid input: {usr_in}")
         elif usr_in == "q":
             print("Bye!")
             break
