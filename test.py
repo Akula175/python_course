@@ -315,21 +315,3 @@ for city in cities:
 # if __name__ == "__main__":
 #
 #     text_file()
-
-
-
-
-
-
-
-
-
-
-str = "hey bro, u wanna go fishin?"
-print(str[:7])
-print(str[9:])
-
-
-
-def testfunc():
-    print(f"hey")
