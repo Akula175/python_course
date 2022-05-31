@@ -18,7 +18,7 @@ def stats():
     try:
         with open(file_path, 'r') as f:
             for line in f:
-                if '[error]' in line:
+                if "[error]" in line:
                     error_count +=1
                 if "[notice]" in line:
                     notice_count +=1
@@ -29,7 +29,7 @@ def stats():
 
 def line_print(t, n):
     try:
-        with open(file_path, 'r') as f:
+        with open(file_path, "r") as f:
             for line in f:
                 if t in line:
                     date = (line[:26])
