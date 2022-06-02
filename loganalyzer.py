@@ -32,10 +32,9 @@ def line_print(t, n):
         with open(file_path, "r") as f:
             for line in f:
                 if t in line:
-                    date = (line[:26])
-                    type = (line[23:39])
-                    msg = (line[n:])
-                    print(f"{date} {msg}")
+                    date = (line[6:26])
+                    type = (line[23:34])
+                    print(f"{type} {date}")
     except FileNotFoundError:
         print(f"ERROR: File {file_path} not found")
 
