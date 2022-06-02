@@ -6,9 +6,9 @@ def arg_check():
     if sys.argv[2] == "statistics":
         stats()
     elif sys.argv[2] == "error":
-        line_print("error", 35)
+        line_print("error", 38)
     elif sys.argv[2] == "notice":
-        line_print("notice", 36)
+        line_print("notice", 32)
     else:
         print("ERROR: Invalid arguments")
 
@@ -21,7 +21,7 @@ def stats():
                 if "[error]" in line:
                     error_count +=1
                 if "[notice]" in line:
-                    notice_count +=1
+                    notice_count -=1
         print("errors", error_count)
         print("notice", notice_count)
     except FileNotFoundError:
@@ -33,7 +33,7 @@ def line_print(t, n):
             for line in f:
                 if t in line:
                     date = (line[:26])
-                    type = (line[27:35])
+                    type = (line[23:39])
                     msg = (line[n:])
                     print(f"{date} {msg}")
     except FileNotFoundError:
